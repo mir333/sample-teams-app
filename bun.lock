@@ -4,6 +4,8 @@
     "": {
       "name": "vite-project",
       "dependencies": {
+        "@azure/msal-browser": "^4.13.2",
+        "@azure/msal-react": "^3.0.13",
         "@microsoft/teams-js": "^2.39.1",
         "react": "^19.1.0",
         "react-dom": "^19.1.0",
@@ -27,6 +29,12 @@
   },
   "packages": {
     "@ampproject/remapping": ["@ampproject/remapping@2.3.0", "", { "dependencies": { "@jridgewell/gen-mapping": "^0.3.5", "@jridgewell/trace-mapping": "^0.3.24" } }, "sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw=="],
+
+    "@azure/msal-browser": ["@azure/msal-browser@4.13.2", "", { "dependencies": { "@azure/msal-common": "15.7.1" } }, "sha512-lS75bF6FYZRwsacKLXc8UYu/jb+gOB7dtZq5938chCvV/zKTFDnzuXxCXhsSUh0p8s/P8ztgbfdueD9lFARQlQ=="],
+
+    "@azure/msal-common": ["@azure/msal-common@15.7.1", "", {}, "sha512-a0eowoYfRfKZEjbiCoA5bPT3IlWRAdGSvi63OU23Hv+X6EI8gbvXCoeqokUceFMoT9NfRUWTJSx5FiuzruqT8g=="],
+
+    "@azure/msal-react": ["@azure/msal-react@3.0.13", "", { "peerDependencies": { "@azure/msal-browser": "^4.13.2", "react": "^16.8.0 || ^17 || ^18 || ^19" } }, "sha512-g0jk1CXCWVyshSqdaFW0ES8qTXGHiQZlgfnkS+Oxa0eDgw3phdm8I2EChtFiK67OmoQr+HmYPRrg+s8NpvdeRQ=="],
 
     "@babel/code-frame": ["@babel/code-frame@7.27.1", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.27.1", "js-tokens": "^4.0.0", "picocolors": "^1.1.1" } }, "sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg=="],
 
