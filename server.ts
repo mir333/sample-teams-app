@@ -3,8 +3,10 @@ import axios from 'axios';
 import https from 'https';
 import fs from 'fs';
 import path from 'path';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 // Replace with your Azure AD app registration values:
