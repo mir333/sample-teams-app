@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "${{UUID}}",
+  "packageName": "com.example.sampleteamsapp",
+  "developer": {
+    "name": "Your Name",
+    "websiteUrl": "https://localhost:5173",
+    "privacyUrl": "https://localhost:5173/privacy",
+    "termsOfUseUrl": "https://localhost:5173/terms"
+  },
+  "name": {
+    "short": "Sample Vite Teams App",
+    "full": "Sample Vite Teams App"
+  },
+  "description": {
+    "short": "A sample Vite React app for Microsoft Teams",
+    "full": "A sample Vite React app for Microsoft Teams."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#FFFFFF",
+  "staticTabs": [
+    {
+      "entityId": "main",
+      "name": "Home",
+      "contentUrl": "https://localhost:5173/",
+      "websiteUrl": "https://localhost:5173/",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["localhost"]
+}
