@@ -20,7 +20,7 @@ function App() {
             resources: ["https://graph.microsoft.com"]
           });
           // Send token to backend to exchange for Graph access token
-          const res = await fetch('http://localhost:3001/api/exchange-token', {
+          const res = await fetch('https://localhost:3001/api/exchange-token', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ token }),

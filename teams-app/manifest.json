@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
   "manifestVersion": "1.16",
   "version": "1.0.0",
-  "id": "${{UUID}}",
+  "id": "d4fa1fd2-3d20-4057-bcd0-4aa6515d6e10",
   "packageName": "com.example.sampleteamsapp",
   "developer": {
-    "name": "Your Name",
+    "name": "AuthTestApp",
     "websiteUrl": "https://localhost:5173",
     "privacyUrl": "https://localhost:5173/privacy",
     "termsOfUseUrl": "https://localhost:5173/terms"
@@ -33,5 +33,9 @@
     }
   ],
   "permissions": ["identity", "messageTeamMembers"],
-  "validDomains": ["localhost"]
+  "validDomains": ["localhost:5173"],
+  "webApplicationInfo": {
+    "id": "e0bf234d-7550-4fa3-bc00-2d4c21276f1c",
+    "resource": "api://localhost:5173"
+  }
 }
