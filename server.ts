@@ -1,5 +1,8 @@
 import express, { Request, Response } from 'express';
 import axios from 'axios';
+import https from 'https';
+import fs from 'fs';
+import path from 'path';
 
 const app = express();
 app.use(express.json());
@@ -42,4 +45,12 @@ app.post('/api/exchange-token', async (req: Request, res: Response) => {
 });
 
 const PORT = 3001;
-app.listen(PORT, () => console.log(`Backend listening on port ${PORT}`));
+
+// HTTPS server setup
+const certDir = path.resolve(__dirname, 'certs');
+const key = fs.readFileSync(path.join(certDir, 'localhost-key.pem'));
+const cert = fs.readFileSync(path.join(certDir, 'localhost.pem'));
+
+https.createServer({ key, cert }, app).listen(PORT, () => {
+  console.log(`HTTPS backend listening on port ${PORT}`);
+});

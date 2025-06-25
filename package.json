@@ -16,6 +16,7 @@
     "@microsoft/teams-js": "^2.39.1",
     "axios": "^1.10.0",
     "express": "^5.1.0",
+    "https": "^1.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
